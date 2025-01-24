@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cabecera {
+  width: 100%;
+  height: 200px;
+  background-color: #cfe5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecera > img {
+  margin: auto;
+}
+
+.enlace-inicio {
+  background-color: #eee;
+  border-radius: 15px;
+  box-shadow: 2px 4px 4px #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.enlace-inicio:hover {
+  transform: translateY(-5px);
+}
+
+.enlace-imagen-circular {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.enlace-imagen-rectangular {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  filter: opacity(0.6);
+}
+
+.marketplace-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+}
+
+.carta-oferta {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 4px 4px #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.descuento {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffd54f;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 1rem;
+}
+
+.oferta-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.oferta-info {
+  margin-top: 15px;
+}
+
+.tienda-nombre {
+  font-size: 1rem;
+  color: #777;
+}
+
+.producto-nombre {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.precio {
+  margin: 5px 0;
+}
+
+.precio-con-descuento {
+  font-weight: bold;
+  color: green;
+  margin-right: 8px;
+}
+
+.precio-viejo {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.nav-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 999;
+}
+
+.btn-round {
+  background-color: #b1d8b7;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-decoration: none;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.nav-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.carta-campana {
+  display: block;
+  position: relative;
+  width: 750px;
+  margin: 40px auto;
+  background-color: #eee;
+  border-radius: 15px;
+  box-shadow: 4px 6px 6px #cccccc;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.campana-img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.8);
+  object-fit: cover;
+  display: block;
+}
+
+.campana-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.qr-img {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+.qr-text {
+  font-size: 25px;
+  margin: 0;
+  color: #333;
+  text-align: left;
+}
+
+.campana-detalle {
+  font-size: 35px;
+  color: #444;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.encuestas-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.pregunta-text {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 500;
+  max-width: 350px;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  gap: 15px;
+}
+
+.valor-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 1;
+  transition: transform 0.2s;
+  border-radius: 50%;
+}
+
+.valor-icon.sad {
+  background-color: #f46f63;
+}
+
+.valor-icon.neutral {
+  background-color: #ef7d1f;
+}
+
+.valor-icon.satisfied {
+  background-color: #ffd54f;
+}
+
+.valor-icon.very-satisfied {
+  background-color: #81c784; 
+}
+
+.valor-icon:hover {
+  transform: scale(1.1);
+}
+
+.btn-enviar {
+  background-color: #52be80; 
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: #45a06e;
+  transform: translateY(-2px);
+}
+
+.btn-enviar img {
+  vertical-align: middle;
+  margin-left: 8px;
+}
